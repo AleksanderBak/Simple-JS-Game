@@ -9,7 +9,7 @@ class Sprite {
         this.frames = frames;
         this.framesCurrent = 0;
         this.framesElapsed = 0;
-        this.framesHold = 12;
+        this.framesHold = 20;
         this.offset = offset;
     }
 
@@ -122,7 +122,7 @@ class Fighter extends Sprite {
     }
 
     takeHit() {
-        this.health -= 50;
+        this.health -= 25;
 
         if (this.health <= 0) {
             this.switchSprite('death')

@@ -12,11 +12,30 @@
             box-sizing: border-box;
             font-family: 'Press Start 2P', cursive;
         }
+        
+        body {
+            background-color: black;
+        }
+
+        .restart-btn {
+            padding: 10px 15px 8px 15px;
+            margin: 20px;
+            border: 2px solid silver;
+            background-color: #1f588da4;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.5s ease;
+        }
+
+        .restart-btn:hover {
+            background-color: #133345a4;
+            cursor: pointer;
+        }
     </style>
     <title>Game</title>
 </head>
 <body>
-    <div style="position: relative; display: inline-block;">
+    <div style="position: relative; display: inline-block; left: 50%; transform: translateX(-50%);">
         <div style="
         position: absolute; 
         display: flex; width: 100%; 
@@ -44,7 +63,7 @@
             justify-content: center;
             align-items: center;
             border: 4px solid silver;
-            ">10</div>
+            "></div>
             
             <!-- Player2 health -->
             <div style="position: relative; width: 100%; display: flex; justify-content: flex-end; border-top: 4px solid silver; border-right: 4px solid silver; border-bottom: 4px solid silver;">
@@ -62,13 +81,14 @@
         <div id="displayText" style="
         position: absolute; 
         color: white; 
+        flex-direction: column;
         align-items: center; 
         justify-content: center;
         top: 0;
         right: 0;
         bottom: 0;
         left:0;
-        display:none;
+        display:flex;
         "></div>
         <canvas></canvas> 
     </div>
