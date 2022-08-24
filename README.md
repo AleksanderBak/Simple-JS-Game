@@ -1,1 +1,1 @@
-﻿# Simple-JS-Fighting
+﻿# Simple-JS-FightingGame
