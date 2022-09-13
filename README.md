@@ -1,5 +1,5 @@
 # Simple-JS-Game
 
-Prosta gra stworzona przy użyciu vanilla javascript oraz html canvas  
-  
+A simple fighting game created using vanilla javascript and html canvas.
+
 Play the game: https://aleksanderbak-js-fighting-game.netlify.app
